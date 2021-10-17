@@ -1,11 +1,11 @@
 ---
 kind: pipeline
-name: "Push on master"
+name: "New version"
 
-concurrency: 
+concurrency:
   limit: 2
 
-  steps:
+steps:
   - name: "Verify & build"
     image: node:10.16.0
     commands: 
